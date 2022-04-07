@@ -93,8 +93,42 @@
 
 <div class="wrapper">
   <div class="topArea">
-    <div class="liveArea">
+    <div class="newsSection">
       <div class="titleBox"><span>健康</span>新聞</div>
+      <div class="newsArea">
+        <div class="newsCarousel owl-carousel owl-theme">
+          <div class="item">
+            <a class="gt" pa="首頁" pl="焦點新聞輪播" href="https://www.setn.com/News.aspx?NewsID=1096812">
+              <img src='https://attach.setn.com/newsimages/2022/04/07/3600717-PH.jpg'>
+            </a>
+            <div class="captionText">
+              <a class="gt" pa="PC首頁" pl="焦點新聞輪播" href="https://www.setn.com/News.aspx?NewsID=1096812">
+                  <strong>女樂手清白了！陳其邁怒罰隱匿疫調者</strong>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <a class="gt" pa="首頁" pl="焦點新聞輪播" href="https://www.setn.com/News.aspx?NewsID=1096857">
+              <img src='https://attach.setn.com/newsimages/2022/04/07/3600901-PH.jpg'>
+            </a>
+            <div class="captionText">
+              <a class="gt" pa="PC首頁" pl="焦點新聞輪播" href="https://www.setn.com/News.aspx?NewsID=1096857">
+                  <strong>花蓮+16　奧斯卡餐廳再添10例</strong>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <a class="gt" pa="首頁" pl="焦點新聞輪播" href="https://www.setn.com/News.aspx?NewsID=1096812">
+              <img src='https://attach.setn.com/newsimages/2022/04/07/3600717-PH.jpg'>
+            </a>
+            <div class="captionText">
+              <a class="gt" pa="PC首頁" pl="焦點新聞輪播" href="https://www.setn.com/News.aspx?NewsID=1096812">
+                  <strong>女樂手清白了！陳其邁怒罰隱匿疫調者</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="hotArea position">
       <div class="titleBox"><span>熱門</span>話題</div>
@@ -179,19 +213,6 @@
           <li><a href="" class="keyword">#枸杞</a></li>
           <li><a href="" class="keyword">#中醫</a></li>
           <li><a href="" class="keyword">#腦神經</a></li>
-          <li><a href="" class="keyword">#器官移植</a></li>
-          <li><a href="" class="keyword">#中醫</a></li>
-          <li><a href="" class="keyword">#腦神經</a></li>
-          <li><a href="" class="keyword">#枸杞</a></li>
-          <li><a href="" class="keyword">#腦神經</a></li>
-          <li><a href="" class="keyword">#枸杞</a></li>
-          <li><a href="" class="keyword">#腦神經</a></li>
-          <li><a href="" class="keyword">#腦神經</a></li>
-          <li><a href="" class="keyword">#器官移植</a></li>
-          <li><a href="" class="keyword">#中醫</a></li>
-          <li><a href="" class="keyword">#腦神經</a></li>
-          <li><a href="" class="keyword">#枸杞</a></li>
-          <li><a href="" class="keyword">#中醫</a></li>
         </ul>
       </div>
     </div>
@@ -218,8 +239,7 @@
             <div class="doctorPic"><img src="images/doctor.jpg" alt=""></div>
             <div class="doctorName">林世航營養師</div>
           </a>
-        </div>
-      
+        </div>      
       </div>
       <div class="doctorPattern">
         <span class="pattern1"></span>
@@ -497,11 +517,11 @@
             loop: true,
             margin: 20,
             nav: true,
-            dots: true,
+            dots: false,
             autoplay: false,
-            navClass: ["carouselNav_prevApp", "carouselNav_nextApp"],
+            navClass: ["carouselNav_prev", "carouselNav_next"],
             navText: [" ", " "],
-            navContainerClass: "carouselNavApp",
+            navContainerClass: "carouselNav",
             responsive:{
               // breakpoint from 0 up
               0:{
@@ -513,11 +533,27 @@
               },
               // breakpoint from 768 up
               768:{
-                  items:6
+                items:6
               }
             }
       });
     });
+</script>
+
+<script type="text/javascript">
+  $(function () {
+    $('.newsCarousel').owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: true,
+          dots: false,
+          autoplay: false,
+          navClass: ["carouselNav_prev", "carouselNav_next"],
+          navText: [" ", " "],
+          navContainerClass: "carouselNav",
+          items:1
+    });
+  });
 </script>
 
 
